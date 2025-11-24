@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <h1>Callback çalıştı</h1>
+    <p>Code parametresi alındı. Şimdi backend’e gönderebilirsin.</p>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.body.innerHTML += "<pre>" + params.toString() + "</pre>";
+    </script>
+  </body>
+</html>
